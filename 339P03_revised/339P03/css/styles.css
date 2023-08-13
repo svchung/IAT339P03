@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans';
+    color: var(--base-black);
+
+}
+
+:root{
+    --dark-purple: #846B9D;
+    --light-purple: #F1E2FF;
+    --cream: #FFFAF1;
+    --grey: #474646;
+
+  /* my colours */
+  --base-black: #161010;
+  --txt-highlight: #CD98C2;
+  --light-purple: #F1E2FF;
+  --dark-purple: #6B4B92;
+  --txt-beige: #E4DED1;
+  --blue-purple: #524C95;
+}
+
+/* text elements */
+h1{
+    color: var(--txt-beige);
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+h2{
+    color: var(--grey);
+    font-weight: bold;
+}
+
+h3{
+    color: var(--txt-beige);
+    font-weight: normal;
+}
+
+h4{
+    color: var(--txt-beige);
+}
+p{
+    color: var(--cream);
+    font-weight: normal;
+}
+
+body{
+    background-color: var(--base-black);
+}
+
+.text-emp{
+    color: var(--txt-highlight);
+}
+
+
+/* button */
+.btn{
+    border-radius: 20px;
+    padding: 1rem;
+    background-color: var(--dark-purple);
+    font-weight: bold;
+    color:var(--cream);
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.btn:hover{
+    background-color: var(--cream);
+    color: var(--grey);
+}
+
+/* nav bar styling */
+/* Reference for navigation bar animation: https://www.youtube.com/watch?v=mu-sc9OO2Pw */
+.nav-bar{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: var(--base-black);
+    padding-bottom: 1rem;
+}
+
+nav{
+    margin-top: 1.5rem;
+    background-color: var(--light-purple);
+    border-radius: 50px;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    background-color: var(--light-purple);
+
+} 
+
+.nav-button{
+    background-color: var(--light-purple);
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--dark-purple);
+    list-style: none;
+    display: inline-block;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+    z-index: 2;
+    transition: color 0.5s;
+}
+
+
+.nav-button::after{
+    content: '';
+    background: var(--dark-purple);
+    width: 110%;
+    height: 300%;
+    border-radius: 50px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0;
+    transition: right 0.2s, opacity 0.5s;
+}
+
+.nav-button:hover{
+    color: var(--cream);
+}
+
+.nav-button:hover::after{
+    top: 50%;
+    opacity: 1;
+}
+
+.contain-objects{
+    display: flex;
+    padding: 5rem;
+
+}
+
+.main-image-box{
+    flex:50%;
+}
+
+.main-image-box img{
+    padding-left: 10rem;
+    width: 40vw;
+    height: auto;
+}
+
+
+.text-box{
+    flex: 50%;
+    padding-top: 5rem;
+    color: var(--txt-beige);
+}
+
+
+
+/* feature */
+.feature{
+    background-color:var(--base-black);
+    height: 80vh;
+}
+
+.main-text-box{
+    padding-top: 10rem;
+    padding-left: 5rem;
+}
+
+/* Homepage Styles */
+.name{
+    padding-bottom: 0;
+    padding-left:2.5rem;
+}
+
+
+
+.who-am-i{
+    background-color: var(--cream);
+    color: var(--dark-purple);
+    height: 40vh;
+}
+
+/* About Me Page styling */
+
+.about-me{
+    padding-top: 7rem;
+    height: 100vh;
+    display: flex;
+}
+
+
+
+
+.about-title{
+    text-align: right;
+    flex: 20%;
+    padding-right:1.5rem;
+}
+
+.about-text{
+    text-align: left;
+    flex:60%;
+    padding-left: 2rem;
+    padding-right: 5rem;
+    
+}
+
+
+.context{
+    background-color: var(--cream);
+    height: 70vh;
+}
+
+.context p{
+    color:var(--grey);
+}
+
+.process-analysis{
+    background-color: var(--grey);
+    height: 70vh;
+}
+
+
+/* Styling for the Projects*/
+
+
+
+.project{
+    height: 60vh;
+}
+
+.project-image-box{
+    flex: 50%;
+}
+
+.project-image-box img{
+    height: auto;
+    width: 90%;
+}
+
+.project-info{
+    background-color: var(--blue-purple);
+    height: 20vh;
+    display: flex;
+}
+
+.p-info{
+    padding-left: 2rem;
+    flex: 33.3%;
+    padding-top: 5rem;
+    flex-wrap: wrap;
+
+}
+
+.app-feature-box{
+    padding-left: 3rem;
+    
+}
+.app-feature-box img{
+    width:30%;
+    height: auto;
+    max-height: 400px;
+}
+
+/* Basic Project Info */
+.project-context{
+    padding-top: 3.5rem;
+    padding-left: 5rem;
+    padding-bottom: 2rem;
+    width: 60vw;
+}
+
+
+.project-images-row{
+    display: flex;
+    padding-left: 0.5rem;
+}
+
+
+.project-images-row img{
+    flex:100%;
+    width:40%;
+    height: auto;
+    max-height: 400px;
+    vertical-align: middle;
+    object-fit: cover;
+}
+
+.app-2{
+    padding-left: 1rem;
+}
+
+.image-display{
+    padding-top: 0.5rem;
+}
+
+.reflection{
+    padding-bottom:3rem;
+}
+.contain-project{
+    display: flex;
+}
+
+.coding-img-box{
+    padding-top: 2rem;
+    width: 100%;
+    height: auto;
+    padding-left: 2rem;
+}
+
+.code-1 img{
+    object-fit: none;
+}

@@ -1,0 +1,7 @@
+/* design for phone */
+@media screen and (max-width:800px){
+
+   .main-text-box{
+        font-size:1rem;
+   }
+}
